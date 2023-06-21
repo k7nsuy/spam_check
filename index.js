@@ -31,7 +31,7 @@
   // a tag가 문자열에 포함될 시 true 반환
   const isSpamHtml = html.includes(`<a href="${link}"></a>`);
   if (isSpamHtml) {
-    return isSpamHtml;
+    return true;
   }
   
   return false; // 어떤 스팸 조건에도 해당하지 않으면 스팸이 아닙니다.
